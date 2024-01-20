@@ -28,6 +28,9 @@ namespace DotNetLearning.DesignPatterns.Singleton
                 // Double-check locking for thread safety
                 if (_instance == null)
                 {
+                    //The _lock object is used as a synchronization object to ensure that
+                    //only one thread at a time can enter the critical section protected by
+                    //the double-check locking mechanism.
                     lock (_lock)
                     {
                         if (_instance == null)
