@@ -43,17 +43,17 @@ public class BikeFactory : IVehicleFactory
 }
 
 
-class Program
-{
-    static void Main()
-    {
-        IVehicleFactory carFactory = new CarFactory();
-        IVehicle car = carFactory.CreateVehicle();
-        car.Drive();
+//class Program
+//{
+//    static void Main()
+//    {
+//        IVehicleFactory carFactory = new CarFactory();
+//        IVehicle car = carFactory.CreateVehicle();
+//        car.Drive();
 
 
-        IVehicleFactory bikeFactory = new BikeFactory();
-        IVehicle bike = bikeFactory.CreateVehicle();
-        bike.Drive();
-    }
-}
+//        IVehicleFactory bikeFactory = new BikeFactory();
+//        IVehicle bike = bikeFactory.CreateVehicle();
+//        bike.Drive();
+//    }
+//}
