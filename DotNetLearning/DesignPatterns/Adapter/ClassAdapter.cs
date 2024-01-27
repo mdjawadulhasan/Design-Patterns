@@ -25,13 +25,13 @@ class ClassAdapter : Adaptee, ITarget
 }
 
 // Client code that expects an ITarget interface
-class Client
-{
-    public void MakeRequest(ITarget target)
-    {
-        target.Request();
-    }
-}
+//class Client
+//{
+//    public void MakeRequest(ITarget target)
+//    {
+//        target.Request();
+//    }
+//}
 
 //class Program
 //{
