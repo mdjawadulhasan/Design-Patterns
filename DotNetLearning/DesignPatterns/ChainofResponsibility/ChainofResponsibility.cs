@@ -74,29 +74,29 @@ public class Request
     }
 }
 
-class Program
-{
-    static void Main()
-    {
-        // Create handlers
-        IHandler handler1 = new ConcreteHandler1();
-        IHandler handler2 = new ConcreteHandler2();
+//class Program
+//{
+//    static void Main()
+//    {
+//        // Create handlers
+//        IHandler handler1 = new ConcreteHandler1();
+//        IHandler handler2 = new ConcreteHandler2();
 
-        // Set up the chain of responsibility
-        handler1.SetNextHandler(handler2);
+//        // Set up the chain of responsibility
+//        handler1.SetNextHandler(handler2);
 
-        // Create requests
-        Request request1 = new Request(5);
-        Request request2 = new Request(15);
-        Request request3 = new Request(25);
+//        // Create requests
+//        Request request1 = new Request(5);
+//        Request request2 = new Request(15);
+//        Request request3 = new Request(25);
 
-        // Process requests
-        handler1.HandleRequest(request1);
-        Console.WriteLine();
+//        // Process requests
+//        handler1.HandleRequest(request1);
+//        Console.WriteLine();
 
-        handler1.HandleRequest(request2);
-        Console.WriteLine();
+//        handler1.HandleRequest(request2);
+//        Console.WriteLine();
 
-        handler1.HandleRequest(request3);
-    }
-}
+//        handler1.HandleRequest(request3);
+//    }
+//}
